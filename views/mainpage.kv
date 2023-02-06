@@ -1,0 +1,34 @@
+#:kivy 1.0
+
+<MainPage>:
+    scan_button: scan_button
+    scan_button: admin_button
+    size: 1200, 1600
+
+    canvas.before:
+        Color:
+            rgba: .82, .82, .82, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    GridLayout:
+        cols: 2
+        Button:
+            id: scan_button
+            center_x: root.width / 2 - self.width
+            size: 200, 100
+            text: 'SCAN'
+            center_y: root.center_y
+            on_press: 
+                root.manager.transition.direction = "right"
+                root.manager.current = 'scan'
+
+        Button:
+            id: admin_button
+            center_x: root.width / 2 + self.width
+            size: 200, 100
+            text: 'ADMIN'
+            center_y: root.center_y
+            on_press: 
+                root.manager.transition.direction = "left"
+                root.manager.current = 'admin'

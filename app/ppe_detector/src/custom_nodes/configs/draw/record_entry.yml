@@ -1,0 +1,5 @@
+input: ["bbox_labels"]
+
+output: ["all_ppe_detected", "entry", "worker_id"]
+
+worker_id: "PLACEHOLDER_ID"

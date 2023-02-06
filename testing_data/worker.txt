@@ -1,0 +1,6 @@
+name, nric, occupation
+junjie,S0123456X,construction
+ryan,S1234567X,construction
+pankti,S2345678X,construction
+jiazhen,S3456789X,construction
+peekingduck,S4567890X,manager

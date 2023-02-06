@@ -1,0 +1,37 @@
+#:kivy 1.0
+
+<ScanPage>:
+    orientation: 'vertical'
+    Camera:
+        id: camera
+        resolution: (1600,1200)
+        play: True
+    ToggleButton:
+        text: 'Play'
+        on_press: camera.play = not camera.play
+        size_hint_y: None
+        height: '48dp'
+    Button:
+        text: 'Capture'
+        size_hint_y: None
+        height: '48dp'
+        on_press: 
+            root.capture()
+            root.manager.transition.direction = "right"
+    MDTextField:
+        id: nric
+        hint_text: "nric"
+        icon_right: "account"
+        mode: "round"
+        size_hint_x: None
+        width: '400dp'
+        font_size: '28dp'
+        pos_hint: {"center_x": 0.5, "y":0.2}
+
+    MDRoundFlatButton:
+        text: "BACK"
+        font_size: 20
+        pos_hint: {"x": 0.1, "y": 0.1}
+        on_press: 
+            root.manager.transition.direction = "right"
+            root.manager.current = "main"

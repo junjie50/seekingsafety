@@ -1,0 +1,64 @@
+#:kivy 1.0.9
+<AdminPage>:
+    MDCard:
+        size_hint: None, None
+        size: 1000, 800
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        elevation: 10
+        padding: 25
+        spacing: 25
+        orientation: 'vertical'
+
+        MDLabel:
+            id: welcome_label
+            text: "SAFETY SEEKER"
+            font_size: 40
+            halign: 'center'
+            size_hint_y: None
+            height: self.texture_size[1]
+            padding_y: 15
+
+        MDTextField:
+            id: user
+            hint_text: "username"
+            icon_right: "account"
+            mode: "round"
+            size_hint_x: None
+            width: 400
+            font_size: 18
+            pos_hint: {"center_x": 0.5}
+
+        MDTextField:
+            id: password
+            hint_text: "password"
+            icon_right: "eye-off"
+            mode: "round"
+            size_hint_x: None
+            width: 400
+            font_size: 18
+            pos_hint: {"center_x": 0.5}
+            password: True
+
+        MDRoundFlatButton:
+            text: "LOG IN"
+            font_size: 20
+            pos_hint: {"center_x": 0.5}
+            on_press: root.logger()
+
+        MDRoundFlatButton:
+            text: "CLEAR"
+            font_size: 20
+            pos_hint: {"center_x": 0.5}
+            on_press: root.clear()
+
+        Widget:
+            size_hint_y: None
+            height: 10
+        
+    MDRoundFlatButton:
+        text: "BACK"
+        font_size: 20
+        pos_hint: {"center_x": 0.1,  "center_y": 0.1} 
+        on_press: 
+            root.manager.transition.direction = "right"
+            root.manager.current = "main"

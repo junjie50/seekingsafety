@@ -1,0 +1,6 @@
+input: ["img", "filename", "pipeline_end", "saved_video_fps"]
+
+output: ["none"]
+
+# Optional configs depending on node
+output_dir: "PeekingDuck/data/output"

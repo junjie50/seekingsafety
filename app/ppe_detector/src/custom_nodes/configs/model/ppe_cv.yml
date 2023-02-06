@@ -1,0 +1,6 @@
+input: ["img"]
+output: ["bboxes", "bbox_labels", "bbox_scores"]
+
+# Configs
+score_threshold: 0.5 
+model_path: "ppe_od.tflite"
