@@ -22,7 +22,8 @@ The image above shows a worker with PPE.
 # **Step4**
 ![Alt text](assets/imgs/demo1.png?raw=true "Dashboard for the manager")
 
-The image above shows the dashboard for the manager. The software can be expanded to include Human Resource Management, pay calculation...
+The image above shows the dashboard for the manager. Workers without PPE will be highlighted in red to tell the manager that there is a lapse in safety control measures.
+The software can be expanded to include Human Resource Management, pay calculation to create an all-in-one software to assist businesses.
 
 
 # **Benefits**
