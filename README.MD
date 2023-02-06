@@ -10,4 +10,14 @@ The image is then processed via peekingduck to verify if the worker has the corr
 
 ![Alt text](.tmp/20230206/S0123456X.png?raw=true "Photo of worker without ppe")
 
+
+The image above shows a worker without PPE.
+
 ![Alt text](.tmp/20230206/S1234567X.png?raw=true "Photo of worker with ppe")
+
+The image above shows a worker with PPE.
+
+![Alt text](assets/imgs/demon1.png?raw=true "Photo capture page")
+
+The image above shows the dashboard for the manager. The software can be expanded to include Human Resource Management, pay calculation...
+
