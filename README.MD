@@ -1,0 +1,3 @@
+# **Context**:
+We have built an application using computer vision to detect if construction worker PPE(Personal Protective Equipment) protocol is being followed diligently. It serves two purposes; it can register the employees’ reporting time and record their shift details when they scan their identity card. The system proceeds to capture an image of the employee and our computer vision model then detects whether the PPE protocols are being complied with. The system can also record a breach of protocols when the employee fails to wear the required equipment and alert the management staff to intervene immediately.
+
