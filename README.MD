@@ -4,22 +4,21 @@ We have built an application using computer vision to detect if construction wor
 # **Usage**
 The software is used when the worker is clocking in for work. The software first capture a photo of the workers along with the nric.
 
-# **Step1**
+# **Step1 Capture**
 ![Alt text](assets/imgs/user_camera.png?raw=true "Photo capture page")
 
 The image is then processed via peekingduck to verify if the worker has the correct equipment on.
 
-# **Step2**
+# **Step2 Process**
 ![Alt text](.tmp/20230206/S0123456X.png?raw=true "Photo of worker without ppe")
 
 The image above shows a worker without PPE.
 
-# **Step3**
 ![Alt text](.tmp/20230206/S1234567X.png?raw=true "Photo of worker with ppe")
 
 The image above shows a worker with PPE.
 
-# **Step4**
+# **Step3 Display**
 ![Alt text](assets/imgs/demo1.png?raw=true "Dashboard for the manager")
 
 The image above shows the dashboard for the manager. Workers without PPE will be highlighted in red to tell the manager that there is a lapse in safety control measures.
